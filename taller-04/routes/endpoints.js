@@ -1,26 +1,8 @@
 import express from "express";
 const router = express.Router();
-
-let usuarios = [
-  {
-    codigo: "200144090",
-    nombre: "Laura",
-    apellido: "Gomez",
-    hobbies: ["leer", "pintar", "bailar"]
-  },
-  {
-    codigo: "200144091",
-    nombre: "Carlos",
-    apellido: "Martínez",
-    hobbies: ["futbol", "cine"]
-  },
-  {
-    codigo: "200144092",
-    nombre: "Ana",
-    apellido: "Ruiz",
-    hobbies: ["nadar"]
-  }
-];
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+let usuarios = require('./24-taller-04-datos.json');
 
 // GET
 // Query params: ?nombre=HOBBY
