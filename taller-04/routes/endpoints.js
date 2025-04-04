@@ -3,19 +3,19 @@ const router = express.Router();
 
 let usuarios = [
   {
-    codigo: "1001",
+    codigo: "200144090",
     nombre: "Laura",
     apellido: "Gomez",
     hobbies: ["leer", "pintar", "bailar"]
   },
   {
-    codigo: "1002",
+    codigo: "200144091",
     nombre: "Carlos",
     apellido: "Martínez",
     hobbies: ["futbol", "cine"]
   },
   {
-    codigo: "1003",
+    codigo: "200144092",
     nombre: "Ana",
     apellido: "Ruiz",
     hobbies: ["nadar"]
